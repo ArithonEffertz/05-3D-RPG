@@ -26,6 +26,6 @@ func _on_Area_body_exited(body):
 
 func finished():
 	get_node("/root/Game/Target_container").show()
-	Global.timer = 120
+	Global.timer = 60
 	Global.update_time()
 	get_node("/root/Game/UI/Timer").start()

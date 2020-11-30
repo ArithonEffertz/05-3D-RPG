@@ -32,7 +32,7 @@ func die():
 	if get_node("/root/Game/Target_container").get_child_count() == 0:
 		health -= 10
 		if health <= 0:
-			Global.update.score(100)
+			Global.update_score(100)
 			queue_free()
 
 func _on_Tween_tween_all_completed():
